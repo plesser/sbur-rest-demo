@@ -1,8 +1,12 @@
 package ru.plesser;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.UUID;
 
+@Entity
 public class Coffee {
+    @Id
     private final String id;
     private String name;
 
